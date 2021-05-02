@@ -9,7 +9,7 @@ This is a basic demo of using [fasttext's](https://fasttext.cc/) webassembly mod
 - By using [automatic hyperparameter optimization](https://fasttext.cc/docs/en/autotune.html), I was able to shrink the 1.6 million tweet model from 250MB to just 2MB, which is why it's actually possible to load it here.
 - It's still by no means perfect; and I'm looking into ways to both optimize for size and improve accuracy.
 
-## Issues I ran into using fasttext webassembly
+## Issues I had to troubleshoot with fasttext webassembly (may help if you're trying to do something similar)
 - If you're trying to do this yourself, I found these notes helpful to set up and build the webassembly binaries. (I'm on ubuntu 18.04)
 
 ### Issue 1 - fasttext wasm compilation error after installing emscripten
