@@ -1,11 +1,13 @@
 # sentiment-analysis-web
 
+**Live Demo here:** http://alextobias.me/sentiment-analysis-web/predict-sentiment.html
+
 This is a basic demo of using [fasttext's](https://fasttext.cc/) webassembly module to peform sentiment analysis. All work is done in the browser with webassembly, no requests to any external sentiment analysis API are made. 
 
 ## Model notes
 - The model is trained on the [Sentiment140](https://www.kaggle.com/kazanova/sentiment140) tweet sentiment dataset.
-- By using [automatic hyperparameter optimization](https://fasttext.cc/docs/en/autotune.html), I was able to shrink the 16 million tweet model from 250MB to just 2MB, so it loads a lot faster.
-- It's still not perfect; and I'm looking into ways to both optimize for size and improve accuracy.
+- By using [automatic hyperparameter optimization](https://fasttext.cc/docs/en/autotune.html), I was able to shrink the 1.6 million tweet model from 250MB to just 2MB, which is why it's actually possible to load it here.
+- It's still by no means perfect; and I'm looking into ways to both optimize for size and improve accuracy.
 
 ## Issues I ran into using fasttext webassembly
 - If you're trying to do this yourself, I found these notes helpful to set up and build the webassembly binaries. (I'm on ubuntu 18.04)

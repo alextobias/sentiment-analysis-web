@@ -25,7 +25,7 @@ addOnPostRun(() => {
 
         submitButton.onclick = () => {
             let text = inputField.value;
-            console.log("Clicked submit, predicting '" + text)
+            console.log("Clicked submit, predicting '" + text + "'")
             let prediction = model.predict(text)
             let result = prediction.get(0)
             let confidence = result[0]

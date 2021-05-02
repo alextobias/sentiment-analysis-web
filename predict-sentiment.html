@@ -6,7 +6,11 @@
 </head>
 <body>
     <h1>Tweet Sentiment Analyzer</h1>
-    <p id="mainText">This is a basic demo of using <a href="https://fasttext.cc/">fasttext's</a> webassembly module to peform sentiment analysis. All work is done in the browser with webassembly, no requests to any external sentiment analysis API are made.</p>
+    <p>By <a href=https://alextobias.me>Alex Tobias</a>(<a href="https://github.com/alextobias/sentiment-analysis-web/">github</a>) - <a href="http://alextobias.me/sentiment-analysis-web/">README here<a></p>
+    <p id="introText">This is a basic demo of using <a href="https://fasttext.cc/">fasttext's</a> webassembly module to peform sentiment analysis. All work is done in the browser with webassembly, no external requests to any language processing APIs are made.</p>
+    <p id="modelNotes">The model is trained on the <a href="https://www.kaggle.com/kazanova/sentiment140">Sentiment140</a> tweet sentiment dataset of 1.6 million tweets. I was able to shrink the model to just 2MB, which is why it's actually possible to load it here. 
+        <br>
+        It's still by no means perfect; and I'm looking into ways to both optimize for size and improve accuracy.</p>
     <p id="readyParagraph">Loading...</p>
     <input id="inputField" type="text" size="60" value="I'm having an amazing day today #blessed">
     <button id="submitButton" disabled>Predict!</button>
