@@ -1,6 +1,6 @@
 # sentiment-analysis-web
 
-**Live Demo here:** [http://alextobias.me/sentiment-analysis-web/predict-sentiment.html](http://alextobias.me/sentiment-analysis-web/predict-sentiment.html)
+**Live Demo here:** [https://alextobias.me/sentiment-analysis-web/predict-sentiment.html](http://alextobias.me/sentiment-analysis-web/predict-sentiment.html)
 
 This is a basic demo of using [fasttext's](https://fasttext.cc/) webassembly module to peform sentiment analysis. All work is done in the browser with webassembly, no requests to any external sentiment analysis API are made. 
 
